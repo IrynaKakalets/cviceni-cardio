@@ -9,6 +9,11 @@ body {
   font-family: sans-serif;
 }
 
+.kontejner {
+  display: flex;
+  flex-direction: row;
+}
+
 .sloupec {
   padding: 20px;
 }
@@ -16,15 +21,23 @@ body {
 .hlavicka {
   background-color: #2ecc71;
 }
+
 .hlavni {
   background-color: #f1c40f;
+  order: 1;
+  flex-grow: 1;
 }
+
 .levy {
   background-color: #3498db;
+  flex-grow: 2;
 }
+
 .pravy {
   background-color: #e74c3c;
+  order: 2;
 }
+
 .paticka {
   background-color: #9b59b6;
 }
