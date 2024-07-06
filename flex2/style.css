@@ -36,7 +36,7 @@
 
 /* ---------------------------------------------------- */
 /* ZDE NAPIŠ VLASTNÍ CSS */
-.kontejner {
+/*.kontejner {
     display: flex;
     flex-direction: row;
 }
@@ -61,3 +61,30 @@
     flex-basis: 50%;
     order: 2;
 }
+*/
+.kontejner {
+    display: flex;
+  }
+  
+  .prvni {
+    flex: 200px 0 0;
+    order: 1;
+    /*
+    Zde není nutné order zadávat, ale protože
+    je zadané u ostatních prvků, je srozumitelnější,
+    když se zde uvede a vývojář si ho nemusí domýšlet.
+    */
+  }
+  .druhy {
+    flex: 1;
+    order: 3;
+  }
+  .treti {
+    flex: 1;
+    order: 2;
+  }
+  
+  .ctvrty {
+    flex: 100px 0 0;
+    order: 4;
+  }

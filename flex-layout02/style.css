@@ -26,7 +26,7 @@ body {
 }
 
 /* ---------------------------------------------------- */
-.kontejner {
+/*.kontejner {
   display: flex;
 }
 
@@ -41,4 +41,20 @@ body {
 
 .pravy .blok.dolni {
   flex-basis: 50%;
+}
+*/
+.kontejner,
+.pravy {
+  display: flex;
+}
+
+.pravy {
+  flex-direction: column;
+}
+
+.levy,
+.pravy,
+.horni,
+.dolni {
+  flex: 50%;
 }

@@ -38,7 +38,7 @@
 
 /* ---------------------------------------------------- */
 /* ZDE NAPIŠ VLASTNÍ CSS */
-.ctverecek {
+/*.ctverecek {
     flex-basis: calc(100% / 4);
 }
 
@@ -57,3 +57,28 @@
 .treti {
     order: 1;
 }
+*/
+
+.kontejner {
+    display: flex;
+  }
+  
+  .ctverecek {
+    flex: 1 0 25%;
+  }
+  
+  .prvni {
+    order: 3;
+  }
+  
+  .druhy {
+    order: 1;
+  }
+  
+  .treti {
+    order: 4;
+  }
+  
+  .ctvrty {
+    order: 2;
+  }

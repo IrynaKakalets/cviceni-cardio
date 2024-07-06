@@ -31,7 +31,7 @@ body {
 }
 
 /* ---------------------------------------------------- */
-.kontejner {
+/*.kontejner {
     display: flex;
     flex-wrap: wrap;
 }
@@ -45,3 +45,27 @@ body {
 .treti {
     flex: calc(100% / 3);
 }
+*/
+.kontejner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .horni {
+    flex: 100%;
+  }
+  
+  .dolni {
+    display: flex;
+  }
+  
+  .prvni,
+  .druhy,
+  .treti {
+    flex: calc(1 / 3);
+    /*
+    Mohli bychom dát i třeba 33.3%, ale
+    3*33.3% bude 99.9%, pořád by nám 0.1% chybělo.
+    calc(1 / 3) je přesně jedna třetina a nic nezbyde.
+    */
+  }
